@@ -13,7 +13,7 @@ interface ILatestDiscussions {
 }
 
 const getLatestDiscussions = async (): Promise<ILatestDiscussions[]> => {
-  const response = await fetch("http://localhost:3000/api/discussions");
+  const response = await fetch("https://bookden.vercel.app/api/discussions");
   const data = response.json();
   return data;
 };
